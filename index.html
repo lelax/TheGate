@@ -210,67 +210,252 @@
     </section><!-- End Clients Section -->
 
     <!-- ======= Services Section ======= -->
+
+
     <section id="services" class="services">
       <div class="container">
 
         <div class="section-title">
           <span>Study o the Domain</span>
           <h2>Study o the Domain</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+          <p>Metadata alignment</p>
         </div>
 
+        <div class="tab">
         <div class="row">
           <div class="col-lg-3 col-md-6" data-aos="fade-up">
             <div class="icon-box">
               <div class="icon"><i class="bi-people-fill"></i></div>
-              <h4><a href="">WHO</a></h4>
+              <button class="tablinks" onclick="openTable(event, 'who')">WHO</button>
               <p></p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
             <div class="icon-box">
-              <div class="icon"><i class="bi-geo-alt-fill"></i></div>
-              <h4><a href="">WHERE</a></h4>
+              <div class="icon"><i class="bi-lightbulb-fill"></i></div>
+              <button class="tablinks" onclick="openTable(event, 'what')">WHAT</button>
               <p></p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="bi-lightbulb-fill"></i></div>
-              <h4><a href="">WHAT</a></h4>
+              <div class="icon"><i class="bi-calendar-check-fill"></i></div>
+              <button class="tablinks" onclick="openTable(event, 'when')">WHEN</button>
               <p></p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="450">
             <div class="icon-box">
-              <div class="icon"><i class="bi-calendar-check-fill"></i></div>
-              <h4><a href="">WHEN</a></h4>
+              <div class="icon"><i class="bi-geo-alt-fill"></i></div>
+              <button class="tablinks" onclick="openTable(event, 'where')">WHERE</button>
               <p></p>
             </div>
           </div>
 
-          <!-- div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon-box">
-              <div class="icon"><i class="bi-book-fill"></i></div>
-              <h4><a href="">Publications</a></h4>
-              <p>WHAT</p>
-            </div>
+    <!--div class="tab">
+            <button class="tablinks" onclick="openTable(event, 'who')">WHO</button>
+            <button class="tablinks" onclick="openTable(event, 'what')">WHAT</button>
+            <button class="tablinks" onclick="openTable(event, 'when')">WHEN</button>
+            <button class="tablinks" onclick="openTable(event, 'where')">WHERE</button>
+          </div> -->
+          
+          <div id="who" class="tabcontent">
+            <table id="who">
+              <thead>
+                  <tr id="trhead">
+                      <th>Property</th>
+                      <th>DC</th>
+                      <th>ISBD</th>
+                      <th>MARC21</th>
+                      <th>Schema.org</th>
+                      <th>CDWA</th>
+                      <th>VRA Core</th>
+                  </tr>
+              </thead>
+              <tr>
+                  <td class="td1">created by / has author /</td>
+                  <td>creator</td>
+                  <td>1.4 Statement of responsibility</td>
+                  <td>100 $a Personal Name</td>
+                  <td>creator; author; director</td>
+                  <td>4.1. Creator Description</td>
+                  <td>agentSet, agent</td>
+              </tr>
+              <tr>
+                  <td class="td1">has publisher</td>
+                  <td>publisher</td>
+                  <td>4.2 Name of publisher, producer and/or distributor</td>
+                  <td>260 $b - Name of producer, publisher, distributor, manufacturer</td>
+                  <td>publisher</td>
+                  <td>4.1.4. Creator role</td>
+                  <td>/</td>
+              </tr>
+              
+          </table>
           </div>
+          
+          <div id="what" class="tabcontent">
+            <table id="what">
+              <thead>
+                  <tr id="trhead">
+                      <th>Property</th>
+                      <th>DC</th>
+                      <th>ISBD</th>
+                      <th>MARC21</th>
+                      <th>Schema.org</th>
+                      <th>CDWA</th>
+                      <th>VRA Core</th>
+                  </tr>
+              </thead>
+              <tr>
+                  <td class="td1">has type</td>
+                  <td>type</td>
+                  <td>0.1 Content Form</td>
+                  <td>/</td>
+                  <td>additionalType</td>
+                  <td>1.2 Object work</td>
+                  <td>/</td>
+              </tr>
+              <tr>
+                  <td class="td1">has subject</td>
+                  <td>subject</td>
+                  <td>/</td>
+                  <td>650 $a - Topical term or geographic name entry element</td>
+                  <td>about</td>
+                  <td>16. Subject Matter</td>
+                  <td>relationSet, relation type="subjectIs"</td>
+              </tr>
+              <tr>
+                <td class="td1">is part of</td>
+                <td>isPartOf</td>
+                <td>6.1 Title proper of a series or multipart monographic resource</td>
+                <td>773 $g - Host Item Entry (R)</td>
+                <td>isPartOf</td>
+                <td>/</td>
+                <td>relationSet, relation type="partOf"</td>
+            </tr>
+              <tr>
+                <td class="td1">has language</td>
+                <td>language</td>
+                <td>/</td>
+                <td>041 $a - Language code of text/sound track or separate title </td>
+                <td>inLanguage</td>
+                <td>/</td>
+                <td>/</td>
+            </tr>
+              <tr>
+                <td class="td1">has material</td>
+                <td>/</td>
+                <td>5.2.1</td>
+                <td>300 $3 - Materials specified</td>
+                <td>material</td>
+                <td>7.1 Materials/Techniques Description</td>
+                <td>materialSet, material</td>
+            </tr>
+              <tr>
+                <td class="td1">has dimension</td>
+                <td>format</td>
+                <td>5.3.1 Statement of the dimensions</td>
+                <td>300 $c - Dimensions</td>
+                <td>size</td>
+                <td>6.1. Dimensions Description</td>
+                <td>measurementsSet, measurements</td>
+            </tr>
+              <tr>
+                <td class="td1">relates to</td>
+                <td>relation</td>
+                <td>7.2.4.6 Other relationships</td>
+                <td>787 $4 - Other Relationship Entry</td>
+                <td>citation</td>
+                <td>20. Related Works</td>
+                <td>Relation type="relatedTo"</td>
+            </tr>
+          </table>
+          </div>
+          
+          <div id="when" class="tabcontent">
+            <table id="when">
+              <thead>
+                  <tr id="trhead">
+                      <th>Property</th>
+                      <th>DC</th>
+                      <th>ISBD</th>
+                      <th>MARC21</th>
+                      <th>Schema.org</th>
+                      <th>CDWA</th>
+                      <th>VRA Core</th>
+                  </tr>
+              </thead>
+              <tr>
+                  <td class="td1">has creation date</td>
+                  <td>created</td>
+                  <td>4.6 Date of printing or manufacture</td>
+                  <td>264 $c - Date of production, publication, distribution, manufacture, or copyright notice</td>
+                  <td>dateCreated</td>
+                  <td>4.2 Creation Date</td>
+                  <td>dateSet, date type="creation"</td>
+              </tr>
+              <tr>
+                  <td class="td1">has publication date / has release date</td>
+                  <td>issued</td>
+                  <td>4.3 Date of publication, production and/or distribution</td>
+                  <td>260 $c - Date of publication, distribution, etc.</td>
+                  <td>datePublished</td>
+                  <td>24.7.2. Venue Date</td>
+                  <td>dateSet, date type="publication"</td>
+              </tr>
+              
+          </table>
+          </div>
+          
+          <div id="where" class="tabcontent">
+            <table id="where">
+              <thead>
+                  <tr id="trhead">
+                      <th>Property</th>
+                      <th>DC</th>
+                      <th>ISBD</th>
+                      <th>MARC21</th>
+                      <th>Schema.org</th>
+                      <th>CDWA</th>
+                      <th>VRA Core</th>
+                  </tr>
+              </thead>
+              <tr>
+                  <td class="td1">held in / displayed in</td>
+                  <td>source</td>
+                  <td>/</td>
+                  <td>852 $a Location</td>
+                  <td>itemLocation</td>
+                  <td>21. Current location</td>
+                  <td>locationSet, location type="repository"</td>
+              </tr>
+              
+          </table>
+          </div>
+          
+                  
+          <script>
+            function openTable(evt, cityName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            </script>    
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="750">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="">Relations</a></h4>
-              <p>WHY?</p>
-            </div>
-          </div> 
-
-        </div>
-
-      </div> -->
+      
+      
     </section>
     
     <!-- End Services Section -->
