@@ -110,7 +110,7 @@
           <li><a href="index.html">Home</a></li>
           <li>Knowledge Organization</li>
         </ol>
-        <h4>Knowledge Organization</h4>
+        <h4>Metadata Choises</h4>
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -121,45 +121,94 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
+          
+            <!--div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center"> 
 
-                <div class="swiper-slide">
-                  <img src="assets/img/diagrams/Conceptual_Map.drawio.svg" alt="">
+                <div class="swiper-slide"> -->
+               
+                  
+                  <div class="col-lg-8">
+                    <div class="portfolio-info">
+                      <h5>Dublin Core</h5>
+                      <ul>
+                        <li><strong>Project URL</strong>: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</a></li>
+                      </ul>
+                    
+                  <p>Metadata terms maintained by the Dublin Core™ Metadata Initiative. Included are the fifteen terms of the Dublin Core™ Metadata Element Set (also known as "the Dublin Core") plus several dozen properties, classes, datatypes, and vocabulary encoding schemes. The "Dublin Core" plus these extension vocabularies are collectively referred to as "DCMI metadata terms" ("Dublin Core terms" for short). These terms are intended to be used in combination with metadata terms from other, compatible vocabularies in the context of application profiles. 
+                  Each term is identified with a Uniform Resource Identifier (URI), a global identifier usable in Linked Data. Term URIs resolve to the (DCMI Metadata Terms) document when selected in a browser or, when referenced programmatically by RDF applications, to one of four RDF schemas. The scope of each RDF schema corresponds to a "DCMI namespace", or set of DCMI metadata terms that are identified using a common base URI, as enumerated in the DCMI Namespace Policy. In Linked Data, the URIs for DCMI namespaces are often declared as prefixes in order to make data, queries, and schemas more concise and readable.</p>                  
+                  <ul>
+                    The four DCMI namespaces are:
+                    <li>http://purl.org/dc/elements/1.1/ The /elements/1.1/ namespace was created in 2000 for the RDF representation of the fifteen-element Dublin Core and has been widely used in data for more than twenty years. This namespace corresponds to the original scope of ISO 15836, which was published first in 2003 and last revised in 2017 as ISO 15836-1:2017 [ISO 15836-1:2017.</li>
+                    <li>http://purl.org/dc/terms/ The /terms/ namespace was originally created in 2001 for identifying new terms coined outside of the original fifteen-element Dublin Core. </li>
+                    <li>In 2008, in the context of defining formal semantic constraints for DCMI metadata terms in support of RDF applications, the original fifteen elements themselves were mirrored in the /terms/ namespace. </li>
+                    <li>As a result, there exists both a dc:date (http://purl.org/dc/elements/1.1/date) with no formal range and a corresponding dcterms:date (http://purl.org/dc/terms/date) with a formal range of "literal".
+                    While these distinctions are significant for creators of RDF applications, most users can safely treat the fifteen parallel properties as equivalent. The most useful properties and classes of DCMI Metadata Terms have now been published as ISO 15836-2:2019 [ISO 15836-2:2019]. While the /elements/1.1/ namespace will be supported indefinitely, DCMI gently encourages use of the /terms/ namespace.</li>
+                  </ul>
+                  </p>
+                </div>
                 </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/diagrams/portfolio-2.jpg" alt="">
+                <div class="col-lg-8">
+                  <div class="portfolio-info">
+                  <h5>ISBD</h5>
+                  <ul>
+                    <li><strong>Project URL</strong>: <a href="https://www.ifla.org/wp-content/uploads/2019/05/assets/cataloguing/isbd/isbd-cons_20110321.pdf">https://www.ifla.org/wp-content/uploads/2019/05/assets/cataloguing/isbd/isbd-cons_20110321.pdf</a></li>
+                  </ul>
+                  <p>"The International Standard Bibliographic Description (ISBD) is intended to serve as a principal standard to promote universal bibliographic control, that is, to make universally and promptly available, in a form that is internationally acceptable, basic bibliographic data for all published resources in all countries.
+                    From the beginning, the main goal of the ISBD has been to provide consistency when sharing bibliographic information.
+                    The primary purpose of the ISBD is to provide the stipulations for compatible descriptive cataloguing worldwide in order to aid the international exchange of bibliographic records between national bibliographic agencies and throughout the international library and information community."</p>
+                </div>
                 </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/diagrams/portfolio-3.jpg" alt="">
+                <div class="col-lg-8">
+                  <div class="portfolio-info">  
+                  <h5>MARC21</h5>
+                  <ul>
+                    <li><strong>Project URL</strong>: <a href="https://www.loc.gov/marc/bibliographic/bdintro.html">https://www.loc.gov/marc/bibliographic/bdintro.html</a></li>
+                  </ul>
+                  <p>"MARC 21 Format for Bibliographic Data is designed to be a carrier for bibliographic information about printed and manuscript textual materials, computer files, maps, music, continuing resources, visual materials, and mixed materials. Bibliographic data commonly includes titles, names, subjects, notes, publication data, and information about the physical description of an item.
+                      The Library of Congress serves as the official depository of United States publications and is a primary source of cataloging records for US and international publications. When the Library of Congress began to use computers in the 1960s, it devised the LC MARC format, a system of using brief numbers, letters, and symbols within the cataloging record itself to mark different types of information. The original LC MARC format evolved into MARC 21 and has become the standard used by most library computer programs. The MARC 21 bibliographic format, as well as all official MARC 21 documentation, is maintained by the Library of Congress. It is published as MARC 21 Format for Bibliographic Data.
+                      A field: Each bibliographic record is divided logically into fields. There is a field for the author, a field for title information, and so on. These fields are subdivided into one or more ""subfields."" As previously noted, the textual names of the fields are too lengthy to be reproduced within each MARC record. Instead they are represented by 3-digit tags. (Though online catalogs may display the names of the fields, the names are supplied by the system software, not by the MARC record.)
+                    A tag: Each field is associated with a 3-digit number called a ""tag."" A tag identifies the field -- the kind of data -- that follows. Even though a printout or screen display may show the tag immediately followed by indicators (making it appear to be a 4- or 5-digit number), the tag is always the first 3 digits.
+                    There are some general rules that help define what all the numbers used as field tags mean. Please note that in discussions of MARC 21 tags, the notation XX is often used to refer to a group of related tags. For example, 1XX refers to all the tags in the 100s: 100, 110, 130, and so on.
+                    
+                    A. Tags divided by hundreds. The basic divisions of the MARC 21 bibliographic record are:
+                    <dl>
+                    
+                             <dt>0XX</dt>        <dd>Control information, numbers, codes</dd>
+                             <dt>1XX </dt>                <dd>Main entry</dd>
+                             <dt>2XX </dt>               <dd>Titles, edition, imprint (in general, the title, statement of responsibility, edition, and publication information)</dd>
+                             <dt>3XX </dt>               <dd>Physical description, etc.</dd>
+                             <dt>4XX </dt>                <dd>Series statements (as shown in the book)</dd>
+                             <dt>5XX </dt>                <dd>Notes</dd>
+                             <dt>6XX </dt>                <dd>Subject added entries</dd>
+                             <dt>7XX </dt>                <dd>Added entries other than subject or series</dd>
+                             <dt>8XX </dt>                <dd>Series added entries (other authoritative forms)</dd>
+                    </dl>
+                    The 9XXs have been left for locally-defined uses, such as local barcode numbers. Local libraries, vendors, or systems can define and use them for attaching other types of information to records. (X9Xs in each of these groups -- 09X, 59X, etc. -- are also reserved for local use, except 490.)"
                 </div>
-
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
-          </div>
-
+              <div class="col-lg-8">
+                <div class="portfolio-info">
+                <h5>CDWA</h5>
+                <ul>
+                  <li><strong>Project URL</strong>: <a href="https://www.getty.edu/research/publications/electronic_publications/cdwa/definitions.pdf">https://www.getty.edu/research/publications/electronic_publications/cdwa/definitions.pdf</a></li>
+                </ul>
+                <p>"The Categories for the Description of Works of Art (CDWA) comprise a set of guidelines for best practice in cataloging and describing works of art, architecture, other material culture, groups and collections of works, and related images. CDWA is not a data model, but it is arranged in a conceptual framework that may be used for designing data models and databases, and for accessing information. CDWA includes around 540 categories and subcategories of information. A small subset of categories are considered core in that they represent the minimum information necessary to identify and describe a work. CDWA includes discussions, basic guidelines for cataloging, and examples. The CDWA is maintained by the Getty Vocabulary Program.
+                  CDWA was formulated for the needs of those who record, maintain, and retrieve information about art information, including the information professional and the academic researcher and scholar.
+                  The categories and subcategories that are indicated as core are those that the task force agreed represent the minimum information necessary to uniquely and unambiguously identify and describe a particular work of art or architecture.
+                  However, which categories are considered core can and indeed should vary depending upon the end-users whom the particular art information system are intended to serve, the mission of the specific institution, and a number of other factors."</p>
+              </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="portfolio-info">
+                <h5>VRA code</h5>
+                <ul>
+                  <li><strong>Project URL</strong>: <a href="https://www.getty.edu/research/publications/electronic_publications/cdwa/definitions.pdf">https://www.getty.edu/research/publications/electronic_publications/cdwa/definitions.pdf</a></li>
+                </ul>
+                <p>VRA Code is a data standard for the description of images and works of art and culture as well as the images that document them. The standard is hosted by the Network Development and MARC Standards Office of the Library of Congress (LC) in partnership with the Visual Resources Association. The VRA Core is managed and maintained by the VRA Cataloging and Metadata Standards Committee. Core 4 is the only metadata standard designed specifically for the description of images and the cultural objects they represent. Core 4 is uniquely able to capture descriptive information about works and images, and indicate relationships between the two. Core 4 is a nationally recognized metadata standard, and is endorsed by the METS Editorial Board as an extension schema for METS objects that contain images of cultural heritage resources. Core 4 elements and attributes can be used in a flat-file environment. Core 4 Work, Image, and Collection records include identical element names; to use these elements in a flat-file environment, the field names should be prefaced with the record type to indicate which record they are affiliated with. For example, the Title field from the Image record could be named I_Title or Image_Title, and the Title field from the Work record could be named W_Title or Work_Title. This will help disambiguate the element names when used in environments outside of the system in which they were created. The relational structure of Core 4 can add efficiency to the cataloging process, because each individual Work needs to be cataloged only once. Any number of Images can relate to that Work without re-entering data about the Work. This efficiency can also reduce cataloging errors, and facilitate global data changes and updates. The Core 4 hierarchical structure is useful for clarifying meanings and relationships between fields of data. Attributes can associate an Agent with her role, for example, or indicate the controlled vocabulary source for a Subject term.</p>
+              </div>
         </div>
 
       </div>
