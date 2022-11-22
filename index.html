@@ -65,19 +65,23 @@
         <ul>
           <!--li><a class="nav-link scrollto active" href="#hero">Home</a></li-->
           <li><a class="nav-link scrollto" href="#about">Auguste Rodin</a></li>
-          <li><a class="nav-link scrollto" href="#why-us">Idea</a></li>
-          <li><a class="nav-link scrollto" href="#clients">List of Items</a></li>
-          
+          <li class="dropdown"><a href="#why-us"><span>Study of the Domain</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a class="nav-link scrollto" href="#why-us">Idea</a></li>
+              <li><a class="nav-link scrollto" href="#portfolio">List of Items</a></li>
+              <li><a class="nav-link scrollto" href="listofitems.html">Description of Items</a></li>
+            </ul>
+          </li>
           <li class="dropdown"><a href="#cta"><span>Knowledge Organization</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="c#con_map">Conceptual Map</a></li>
+              <li><a href="#con_map">Conceptual Map</a></li>
               <li><a href="#er_mod">Entity-relationship Model</a></li>
               <li><a href="#services">Metadata</a></li>
               <li><a href="#theo_mod">Theoretical Model</a></li>
               <li><a href="#">Conceptual Model</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#pricing"><span>Knowledge Representation</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#KR"><span>Knowledge Representation</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="KR_page.html">Description of data</a></li>
               <li><a href="KR_page.html">RDF production</a></li>
@@ -203,8 +207,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-sculpture">
             <img src="assets/img/portfolio/s.1021_web_numjm003.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Portrait of 
-                Auguste Rodin by Claudel</h4>
+              <h4>Portrait of Auguste Rodin by Claudel</h4>
               <p>Sculptures</p>
               <a href="assets/img/portfolio/s.1021_web_numjm003.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Museé Rodin, France"><i class="bx bx-plus"></i></a>
               <a href="https://www.musee-rodin.fr/en/musee/collections/oeuvres/portrait-rodin" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
@@ -216,8 +219,8 @@
             <div class="portfolio-info">
               <h4>Le Matin Newspaper article about Gates of Hell</h4>
               <p>Newspaper Article</p>
-              <a href="assets/img/portfolio/leMatin.jpeg data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/leMatin.jpeg data-gallery=" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="https://gallica.bnf.fr/ark:/12148/bpt6k558114k/f1.image" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -702,8 +705,8 @@
 </div>      
 </section>
 
-    <!-- ======= Pricing Section ======= -->
-    <!--section id="pricing" class="pricing">
+    <!-- ======= KR Section ======= -->
+    <!--section id="kr" class="pricing">
       <div class="container">
         <div class="row">
 
@@ -772,7 +775,7 @@
         </div>
 
       </div>
-    </section><!-- End Pricing Section -->
+    </section><!-- End KR Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
